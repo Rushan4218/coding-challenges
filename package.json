@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
@@ -14,12 +14,9 @@
   "license": "ISC",
   "packageManager": "pnpm@11.24.0",
   "devDependencies": {
-    "@babel/core": "^8.0.1",
-    "@babel/preset-env": "^8.0.2",
-    "@babel/preset-typescript": "^8.0.1",
     "@types/jest": "^30.0.0",
-    "babel-jest": "^30.5.0",
     "jest": "^30.5.0",
-    "typescript": "^7.0.2"
+    "ts-jest": "^29.4.12",
+    "typescript": "^5.7.3"
   }
 }
