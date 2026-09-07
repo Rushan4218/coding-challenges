@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "typecheck": "tsc --noEmit",
     "challenge": "tsx scripts/challenge.ts"
   },
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^26.4.1",
+    "cross-env": "^10.1.0",
     "jest": "^30.5.0",
     "ts-jest": "^29.4.12",
     "tsx": "^4.23.13",
